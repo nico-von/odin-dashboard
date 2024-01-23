@@ -3,8 +3,11 @@
     font-family: 'Roboto', sans-serif;
     --main-colour: #a855f7;
     --main-colour-lighter: #c084fc;
+    --main-colour-lightest: #e9d5ff;
     --highlight-colour: #65a30d;
     --secondary-colour: #f3f4f6;
+    --secondary-text: #6b7280;
+    --separator-colour: #94a3b8;
     --border-shadow-colour: #0000003d;
 }
 
@@ -68,6 +71,10 @@ body {
     list-style-type: none;
     font-size: 1.4rem;
     font-weight: bold;
+}
+
+.menu-item:hover {
+    cursor: pointer;
 }
 
 .logo>img {
@@ -190,14 +197,8 @@ body {
     flex-direction: column;
 }
 
-.projects>.container,
-.announcements>.container,
-.trending>.container {
-    flex: 1;
-}
-
 .container {
-    padding: 1rem;
+    flex: 1;
 }
 
 .welcome-text {
@@ -225,9 +226,10 @@ body {
 }
 
 .projects>.container {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(500px, 1fr));
     gap: 1rem;
+    padding: 1rem;
 }
 
 .projects>.container>.card {
@@ -244,26 +246,56 @@ body {
     box-shadow: 0px 2px 10px 1px var(--border-shadow-colour);
 }
 
-.projects>.container>.card>.content {
+.projects .card>.content {
     display: flex;
     flex-direction: column;
 }
 
-.projects>.container>.card>.content>.description {
+.projects .card>.content>.description {
     flex: 1;
+    color: var(--secondary-text)
 }
 
-.projects>.container>.card>.buttons {
+.projects .card>.buttons {
     align-self: flex-end;
+    display: flex;
+    gap: 1rem;
+}
+
+.projects .card>.buttons>img {
+    width: 1.5rem;
+    height: auto;
+}
+
+.projects .card>.buttons>img:hover {
+    cursor: pointer;
 }
 
 .announcements>.container,
 .trending>.container {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    margin: 1.5rem;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0px 2px 10px 1px var(--border-shadow-colour);
 }
 
+.announcements>.container {
+    padding: 1rem;
+}
+
+.announcements .card {
+    margin: 1rem;
+}
+.announcements .card:first-child,
+.announcements .card:nth-child(2){
+    border-bottom: 2px solid var(--separator-colour);
+}
+
+.announcements .description {
+    color: var(--secondary-text)
+}
 .trending .card {
     flex: 1;
     display: flex;
