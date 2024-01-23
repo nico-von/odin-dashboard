@@ -11,7 +11,9 @@ em {
     text-decoration: line-through;
     font-style: normal;
 }
-
+h1 {
+    font-size: 2rem;
+}
 h4 {
     font-size: 1.4rem;
 }
@@ -44,25 +46,37 @@ body {
     grid-row: 1 / 3;
     flex-direction: column;
     gap: 1.5rem;
-    padding: 1rem 1rem;
+    padding: 1rem 2rem;
     background-color: var(--main-colour);
     color: white;
 }
 
+
 .menu {
     margin: 0;
-    padding: 0;
-    gap: .5rem;
+    padding: 1rem;
+    gap: 1rem;
     display: flex;
     flex-direction: column;
 }
 
-.menu-item {
+.menu-item,
+.logo {
+    display: flex;
+    gap: 1rem;
     list-style-type: none;
     font-size: 1.4rem;
-    font-weight: 400;
+    font-weight: bold;
 }
 
+.logo>img {
+    width: 3rem;
+    height: auto;
+}
+.menu-item>img {
+    width: 1.8rem;
+    height: auto;
+}
 .header {
     display: flex;
     grid-column: 2 / 3;
