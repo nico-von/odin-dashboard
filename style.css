@@ -2,6 +2,7 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
     --main-colour: #a855f7;
+    --main-colour-lighter: #c084fc;
     --highlight-colour: #65a30d;
     --secondary-colour: #f3f4f6;
     --border-shadow-colour: #0000003d;
@@ -101,10 +102,61 @@ body {
     padding: 1rem 2rem;
     display: flex;
     gap: 1rem;
+    justify-content: start;
+    align-items: center;
+}
+
+.header-left {
+    gap: 0.5rem;
 }
 
 .header-right {
     margin-left: auto;
+}
+
+
+.header-right .icons,
+.header-left .icons {
+    width: 1.5rem;
+    height: auto;
+}
+
+.header-right .account-photo {
+    width: 3rem;
+    height: auto;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+.header-left .account-photo {
+    width: 5rem;
+    height: auto;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+}
+
+#search-bar input[type="search"]{
+    background-color: var(--secondary-colour);
+    border-radius: 10px;
+    border: none;
+    font-size: 1rem;
+    padding: .5rem 2rem;
+    width: max(400px, 30vw);
+}
+
+.header-right button {
+    font-size: 1rem;
+    color: white;
+    background-color: var(--main-colour);
+    border: none;
+    border-radius: 30px;
+    padding: 1rem 2rem;
+    font-weight: 600;
+}
+
+.header-right button:hover {
+    background-color: var(--main-colour-lighter);
+    cursor: pointer;
 }
 
 .main {
@@ -152,10 +204,24 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: max(400px, 30vw);
 }
 
 .greeting {
     font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.greeting-info{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.greeting-info .handle {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 0;
 }
 
 .projects>.container {
