@@ -3,51 +3,221 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" description="width=device-width, initial-scale=1.0">
     <title>Odin Dashboard</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <div class="sidebar">
-        <div class="logo">LOGO</div>
+        <div class="logo">My Sheiney Board</div>
         <div class="main-menu">
             <ul class="menu">
                 <li class="menu-item">
-                    Sample 1
+                    Home
                 </li>
                 <li class="menu-item">
-                    Sample 2
+                    Profile
+                </li>
+                <li class="menu-item">
+                    Messages
+                </li>
+                <li class="menu-item">
+                    History
+                </li>
+                <li class="menu-item">
+                    Tasks
+                </li>
+                <li class="menu-item">
+                    Communities
                 </li>
             </ul>
         </div>
         <div class="supplementary-menu">
             <ul class="menu">
                 <li class="menu-item">
-                    Sample 1
+                    Settings
                 </li>
                 <li class="menu-item">
-                    Sample 2
+                    Support
+                </li>
+                <li class="menu-item">
+                    Privacy
                 </li>
             </ul>
         </div>
     </div>
     <div class="header">
         <div class="header-upper">
-            <div class="header-left">header left</div>
-            <div class="header-right">header right</div>
+            <div class="header-left">
+                <div>Search</div>
+                <form id="search-bar">
+                    <input type="search" placeholder="Looking for anything?">
+                </form>
+            </div>
+            <div class="header-right">
+                <div>Notification</div>
+                <div>Account</div>
+                <div>Sheiney B.</div>
+            </div>
         </div>
         <div class="header-lower">
+            <div class="header-left">
+                <div>Account Photo</div>
+                <div class="welcome-text">
+                    <div class="greeting">Greetings,</div>
+                    <div>
+                        <span>Sheiney B.</span>
+                        <span>(@sheineyyy)</span>
+                    </div>
+                </div>
+            </div>
+            <div class="header-right">
+                <div>
+                    <button>New</button>
+                </div>
+                <div>
+                    <button>Upload</button>
+                </div>
+                <div>
+                    <button>Share</button>
+                </div>
 
-            <div class="header-left">header left</div>
-            <div class="header-right">header right</div>
+            </div>
         </div>
     </div>
     <main>
         <div class="main">
-            <div class="projects">projects</div>
-            <div class="announcements">announcements</div>
-            <div class="trending">trending</div>
+            <div class="projects">
+                <h4>Projects</h4>
+                <div class="container">
+                    <div class="card">
+                        <div class="content">
+                            <h5 class="title">Cold Cold Weather</h5>
+                            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod
+                                tempor
+                                incididunt ut labore et dolore magna aliqua. </p>
+                        </div>
+                        <div class="buttons"><button>Star</button><button>Add</button><button>Share</button></div>
+                    </div>
+                    <div class="card">
+                        <div class="content">
+                            <h5 class="title">Salt is better than sugar</h5>
+                            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod
+                                tempor
+                                incididunt ut labore et dolore magna aliqua. </p>
+                        </div>
+                        <div class="buttons"><button>Star</button><button>Add</button><button>Share</button></div>
+                    </div>
+                    <div class="card">
+                        <div class="content">
+                            <h5 class="title">Don't take away my popcorn</h5>
+                            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod
+                                tempor
+                                incididunt ut labore et dolore magna aliqua. </p>
+                        </div>
+                        <div class="buttons"><button>Star</button><button>Add</button><button>Share</button></div>
+                    </div>
+                    <div class="card">
+                        <div class="content">
+                            <h5 class="title">Soy sauce a day keep the hormones away</h5>
+                            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod
+                                tempor
+                                incididunt ut labore et dolore magna aliqua. </p>
+                        </div>
+                        <div class="buttons"><button>Star</button><button>Add</button><button>Share</button></div>
+                    </div>
+                    <div class="card">
+                        <div class="content">
+                            <h5 class="title">Blackpink in my area</h5>
+                            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod
+                                tempor
+                                incididunt ut labore et dolore magna aliqua. </p>
+                        </div>
+                        <div class="buttons"><button>Star</button><button>Add</button><button>Share</button></div>
+                    </div>
+                    <div class="card">
+                        <div class="content">
+                            <h5 class="title">Tender Biter</h5>
+                            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod
+                                tempor
+                                incididunt ut labore et dolore magna aliqua. </p>
+                        </div>
+                        <div class="buttons"><button>Star</button><button>Add</button><button>Share</button></div>
+                    </div>
+                </div>
+            </div>
+            <div class="announcements">
+                <h4>Announcements</h4>
+                <div class="container">
+                    <div class="card">
+                        <div class="content">
+                            <h6 class="title">New York, New York</h6>
+                            <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                                officia
+                                deserunt mollit anim id est laborum</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="content">
+                            <h6 class="title">London, to Visit the <em>Queen</em> King</h6>
+                            <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                                officia
+                                deserunt mollit anim id est laborum</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="content">
+                            <h6 class="title">Sweden, Stockholm</h6>
+                            <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                                officia
+                                deserunt mollit anim id est laborum</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="trending">
+                <h4>Trending</h4>
+                <div class="container">
+                    <div class="card">
+                        <div class="photo">PAM</div>
+                        <div class="content">
+                            <div class="handle">@pampu</div>
+                            <div class="account-name">Pampu Lootan</div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="photo">LUN</div>
+                        <div class="content">
+                            <div class="handle">@luna</div>
+                            <div class="account-name">Luna Moonfang</div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="photo">RDO</div>
+                        <div class="content">
+                            <div class="handle">@cardo</div>
+                            <div class="account-name">Ricardo Black</div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="photo">MAX</div>
+                        <div class="content">
+                            <div class="handle">@max</div>
+                            <div class="account-name">Maximus Belgiumus</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
 
