@@ -196,6 +196,11 @@ body {
     display: flex;
     flex-direction: column;
 }
+.projects h4,
+.announcements h4,
+.trending h4{
+    padding-left: 1.5rem;
+}
 
 .container {
     flex: 1;
@@ -300,9 +305,20 @@ body {
     flex: 1;
     display: flex;
     gap: 1rem;
+    padding: 1.5rem;
     align-items: center;
 }
 
+.trending img {
+    width: 3rem;
+    height: auto;
+    background-color: var(--main-colour-lightest);
+    border-radius: 50%;
+}
 .trending .card>.content {
     flex: 1;
+}
+
+.trending .account-name {
+    color: var(--secondary-text)
 }
